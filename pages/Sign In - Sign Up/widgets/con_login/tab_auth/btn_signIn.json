@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 47,
+  "bottomRow": 50,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -30,8 +30,8 @@
   "key": "d80868s2dr",
   "leftColumn": 2,
   "onClick": "{{functions.SignIn();}}",
-  "originalBottomRow": 46,
-  "originalTopRow": 40,
+  "originalBottomRow": 50,
+  "originalTopRow": 44,
   "parentColumnSpace": 18.1875,
   "parentId": "8rq3ao3yqz",
   "parentRowSpace": 10,
@@ -45,7 +45,7 @@
     "submit"
   ],
   "text": "SIGN IN",
-  "topRow": 41,
+  "topRow": 44,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "voz3dh2wjt",

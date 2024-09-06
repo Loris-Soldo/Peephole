@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 21,
+  "bottomRow": 24,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -25,19 +25,19 @@
   "isLoading": false,
   "isVisible": true,
   "key": "kk7n75w0mq",
-  "leftColumn": 2,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "originalBottomRow": 21,
-  "originalTopRow": 16,
+  "originalBottomRow": 24,
+  "originalTopRow": 17,
   "overflow": "NONE",
   "parentColumnSpace": 19.5,
   "parentId": "8rq3ao3yqz",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 62,
+  "rightColumn": 64,
   "searchTags": [
     "typography",
     "paragraph",

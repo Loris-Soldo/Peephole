@@ -9,9 +9,14 @@
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "Open Sans",
-  "fontSize": "1.875rem",
+  "fontSize": "1.6rem",
   "fontStyle": "",
   "hideCard": false,
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -19,7 +24,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "tcimoejkol",
-  "leftColumn": 2,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
@@ -27,7 +32,7 @@
   "parentId": "f5yn1hxqze",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 26,
+  "rightColumn": 64,
   "searchTags": [
     "typography",
     "paragraph",

@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "borderRadius": "1.5rem",
+  "borderRadius": "50%",
   "bottomRow": 8,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -9,6 +9,11 @@
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "borderRadius"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -20,7 +25,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "au5rdsrbxv",
-  "leftColumn": 28,
+  "leftColumn": 27,
   "parentColumnSpace": 18.1875,
   "parentId": "8rq3ao3yqz",
   "parentRowSpace": 10,
