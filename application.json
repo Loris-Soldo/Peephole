@@ -1,10 +1,20 @@
 {
   "appIsExample": false,
+  "appLayout": {
+    "type": "FLUID"
+  },
   "applicationDetail": {
-    "appPositioning": {
-      "type": "FIXED"
+    "navigationSetting": {
+      "colorStyle": "light",
+      "itemStyle": "text",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "navStyle": "sidebar",
+      "orientation": "side",
+      "position": "static",
+      "showNavbar": false,
+      "showSignIn": true
     },
-    "navigationSetting": {},
     "themeSetting": {
       "appMaxWidth": "LARGE",
       "density": 1.0,
@@ -13,20 +23,54 @@
   },
   "applicationVersion": 2,
   "collapseInvisibleWidgets": true,
-  "color": "#C2DAF0",
+  "color": "#C7F3F0",
   "evaluationVersion": 2,
   "icon": "bar-graph",
   "pages": [
     {
-      "id": "Page1",
+      "id": "Sign In - Sign Up",
+      "isDefault": false
+    },
+    {
+      "id": "Peepholes",
+      "isDefault": false
+    },
+    {
+      "id": "Home",
       "isDefault": true
+    },
+    {
+      "id": "Connectors",
+      "isDefault": false
+    },
+    {
+      "id": "Successful Sign Up",
+      "isDefault": false
+    },
+    {
+      "id": "Account Creation",
+      "isDefault": false
+    },
+    {
+      "id": "Email Verified Successfuly",
+      "isDefault": false
     }
   ],
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
   "unpublishedApplicationDetail": {
-    "appPositioning": {
-      "type": "FIXED"
+    "navigationSetting": {
+      "colorStyle": "light",
+      "itemStyle": "text",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "navStyle": "sidebar",
+      "orientation": "side",
+      "position": "static",
+      "showNavbar": false,
+      "showSignIn": true
     },
-    "navigationSetting": {},
     "themeSetting": {
       "appMaxWidth": "LARGE",
       "density": 1.0,

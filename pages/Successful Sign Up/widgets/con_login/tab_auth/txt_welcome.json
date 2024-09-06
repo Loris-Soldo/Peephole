@@ -1,7 +1,8 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 25,
+  "bottomRow": 24,
+  "displayName": "Text",
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,42 +12,45 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
-  "fontStyle": "BOLD",
+  "fontStyle": "",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+  "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "5kuw0ma2k8",
-  "leftColumn": 6,
+  "key": "kk7n75w0mq",
+  "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 25,
-  "mobileLeftColumn": 6,
-  "mobileRightColumn": 22,
-  "mobileTopRow": 21,
-  "needsErrorInfo": false,
+  "originalBottomRow": 28,
+  "originalTopRow": 17,
   "overflow": "NONE",
-  "parentColumnSpace": 14.8125,
-  "parentId": "0",
+  "parentColumnSpace": 19.5,
+  "parentId": "8rq3ao3yqz",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 22,
+  "rightColumn": 62,
+  "searchTags": [
+    "typography",
+    "paragraph",
+    "label"
+  ],
   "shouldTruncate": false,
-  "text": "Hello {{appsmith.user.name || appsmith.user.email}}",
+  "text": "Check you emails for confirmation.\n\nYou can close this page.",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 21,
+  "topRow": 17,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "vvnacv2zxo",
-  "widgetName": "Text1"
+  "widgetId": "63lky3oent",
+  "widgetName": "txt_welcome"
 }

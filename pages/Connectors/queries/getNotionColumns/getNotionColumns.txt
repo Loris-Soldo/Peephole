@@ -1,0 +1,7 @@
+SELECT
+	notion_column_name AS label,
+	notion_column_id AS value
+FROM
+	public.notion_tables
+WHERE
+	notion_table_id = {{jsf_newCard.formData.notiontable}}
