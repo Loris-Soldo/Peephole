@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "fullyQualifiedName": "functions.ValidateToken",
     "name": "ValidateToken",
     "pageId": "Email Verified Successfuly",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

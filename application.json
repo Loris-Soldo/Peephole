@@ -54,6 +54,10 @@
     {
       "id": "Email Verified Successfuly",
       "isDefault": false
+    },
+    {
+      "id": "Sign Up Invite",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

@@ -36,9 +36,13 @@ export default {
 
 						// Condition pour rediriger selon les résultats de GetAccount
 						if (account.count > 0) {
-								navigateTo('Home'); // Rediriger vers la première page si la condition est vraie
+								setTimeout(() => {
+										navigateTo('Home'); // Rediriger vers la première page si la condition est vraie
+								}, 1000); // Attendre 1 seconde avant la redirection
 						} else {
-								navigateTo('Account Creation'); // Rediriger vers la deuxième page sinon
+								setTimeout(() => {
+										navigateTo('Account Creation'); // Rediriger vers la deuxième page sinon
+								}, 1000); // Attendre 1 seconde avant la redirection
 						}
 				} catch (error) {
 						showAlert("Error: " + error.message, "error");

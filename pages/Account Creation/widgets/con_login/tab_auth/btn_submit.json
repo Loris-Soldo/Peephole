@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 44,
+  "bottomRow": 53,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -31,8 +31,8 @@
   "key": "d80868s2dr",
   "leftColumn": 2,
   "onClick": "{{CreateAccount.run().then(() => {\n  storeValue('account_id', CreateAccount.data[0].account_id);\n  navigateTo('Home', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert('Something didn\\'t worked as expected. This company might already exist.', 'error');\n});}}",
-  "originalBottomRow": 44,
-  "originalTopRow": 38,
+  "originalBottomRow": 53,
+  "originalTopRow": 47,
   "parentColumnSpace": 18.1875,
   "parentId": "8rq3ao3yqz",
   "parentRowSpace": 10,
@@ -46,7 +46,7 @@
     "submit"
   ],
   "text": "SUBMIT",
-  "topRow": 38,
+  "topRow": 47,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "voz3dh2wjt",
