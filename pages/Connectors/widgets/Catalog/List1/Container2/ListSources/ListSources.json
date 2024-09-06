@@ -1,0 +1,153 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "additionalStaticProps": [
+    "level",
+    "levelData",
+    "prefixMetaWidgetId",
+    "metaWidgetId"
+  ],
+  "animateLoading": true,
+  "backgroundColor": "transparent",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 30,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 260,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dropDisabled": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "flexLayers": [],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "tq8drupedb",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 400,
+      "minWidth": 450,
+      "mobileBottomRow": 400,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 142.398193359375,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "noPad": true,
+      "onCanvasUI": {
+        "disableParentSelection": true,
+        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+      },
+      "openParentPropertyPane": true,
+      "parentColumnSpace": 1,
+      "parentId": "apiaa61f4q",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 142.398193359375,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "75y83la3ky",
+      "widgetName": "Canvas4"
+    }
+  ],
+  "currentItemsView": "{{[]}}",
+  "displayName": "List",
+  "dynamicBindingPathList": [
+    {
+      "key": "currentItemsView"
+    },
+    {
+      "key": "selectedItemView"
+    },
+    {
+      "key": "triggeredItemView"
+    },
+    {
+      "key": "primaryKeys"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onItemClick"
+    }
+  ],
+  "enhancements": true,
+  "flexVerticalAlignment": "start",
+  "gridType": "vertical",
+  "hasMetaWidgets": true,
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.03ffd4284fea6902cc6bed8251f39ea8.svg",
+  "isCanvas": true,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "itemBackgroundColor": "#FFFFFF",
+  "itemSpacing": 8,
+  "key": "z8cprbmg1y",
+  "leftColumn": 9,
+  "listData": "[\n\t\t{\n\t\t\t\"id\": \"001\",\n\t\t\t\"name\": \"Notion\",\n\t\t\t\"type\": \"Note taking\",\n\t\t\t\"img\": \"https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png\"\n\t\t},\n\t\t{\n\t\t\t\"id\": \"002\",\n\t\t\t\"name\": \"Airtable\",\n\t\t\t\"type\": \"Raw data\",\n\t\t\t\"img\": \"https://cdn.brighttalk.com/ams/california/images/channel/20033/image_922063.png?width=300&height=300\"\n\t\t},\n\t\t{\n\t\t\t\"id\": \"003\",\n\t\t\t\"name\": \"Google Sheets\",\n\t\t\t\"type\": \"Raw data\",\n\t\t\t\"img\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhrGMQyKH0lSO6F9JJPacQQf0Xwjx-Eolr1Q&s\"\n\t\t}\n]",
+  "mainCanvasId": "75y83la3ky",
+  "mainContainerId": "qatd0fyf8a",
+  "minWidth": 450,
+  "mobileBottomRow": 47,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 9,
+  "mobileTopRow": 7,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onItemClick": "{{navigateTo(\"\", {}, 'SAME_WINDOW')}}",
+  "pageSize": 2,
+  "parentColumnSpace": 15.822021484375,
+  "parentId": "8oeo4hch7k",
+  "parentRowSpace": 10,
+  "primaryKeys": "{{ListSources.listData.map((currentItem, currentIndex) => currentItem[\"id\"] )}}",
+  "renderMode": "CANVAS",
+  "requiresFlatWidgetChildren": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 55,
+  "selectedItemView": "{{{}}}",
+  "tags": [
+    "Display"
+  ],
+  "templateHeight": 160,
+  "thumbnailSVG": "https://appcdn.appsmith.com/static/media/thumbnail.469b7e8d3a04de93014af9a7bc9ebe56.svg",
+  "topRow": 4,
+  "triggeredItemView": "{{{}}}",
+  "type": "LIST_WIDGET_V2",
+  "widgetId": "apiaa61f4q",
+  "widgetName": "ListSources"
+}

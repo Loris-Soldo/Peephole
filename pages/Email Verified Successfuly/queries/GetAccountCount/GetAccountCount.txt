@@ -1,0 +1,4 @@
+SELECT COUNT(*)
+FROM objects.accounts_users
+WHERE user_id = {{ appsmith.store.user_id }}
+LIMIT 1;

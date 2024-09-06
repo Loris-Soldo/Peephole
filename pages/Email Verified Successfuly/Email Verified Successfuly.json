@@ -1,11 +1,13 @@
 {
-  "gitSyncId": "66daa570f28f837bca3b69a2_9c114eb7-dd87-4bf1-9fbb-52a7880b3cb0",
+  "gitSyncId": "6622d77404b7eb2dc2f12f54_38b120cb-eebf-4b0c-9066-e30ab172982a",
   "unpublishedPage": {
+    "customSlug": "",
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 380,
+          "bottomRow": 970,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -26,7 +28,7 @@
         }
       }
     ],
-    "name": "Page1",
-    "slug": "page1"
+    "name": "Email Verified Successfuly",
+    "slug": "email-verified-successfuly"
   }
 }
