@@ -1,0 +1,5 @@
+UPDATE objects.accounts_users
+SET user_id = {{ appsmith.store.user_id }},
+    status = 'Active'
+WHERE user_id IS NULL
+AND user_email = {{ appsmith.store.user_email }};

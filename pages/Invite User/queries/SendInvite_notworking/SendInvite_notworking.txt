@@ -1,0 +1,4 @@
+<h2>You have been invited</h2>
+
+<p>You have been invited to Sign Up on Peephole. Follow this link to </p>
+<p><a href="https://app.appsmith.com/app/peephole/sign-in-sign-up-66daa85860286c6bec33b77b">Accept the invite</a></p>

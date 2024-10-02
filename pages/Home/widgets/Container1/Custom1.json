@@ -1,0 +1,68 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 62,
+  "bottomRowBeforeCollapse": 62,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "4wprh821zx",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 35,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 8,
+  "mobileTopRow": 5,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "originalBottomRow": 62,
+  "originalTopRow": 0,
+  "parentColumnSpace": 14.8125,
+  "parentId": "rbvvrd3ck0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "srcDoc": {
+    "css": "@charset \"UTF-8\";\n.sidebar {\n  background-color: #4A3AFF;\n  width: calc(100% - 40px); /* Compense le padding */\n  padding: 20px; /* Padding uniforme autour de la sidebar */\n  color: #ffffff;\n  font-family: Arial, sans-serif;\n  height: calc(100vh - 40px);\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  overflow: hidden;\n}\n\n.menu {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n}\n\n.menu-item {\n  display: flex;\n  align-items: center;\n  padding: 10px 20px; /* Padding ajusté pour équilibrer */\n  font-size: 16px;\n  cursor: pointer;\n  border-radius: 8px;\n  transition: background 0.3s ease;\n  margin-bottom: 15px;\n}\n\n.menu-item:hover {\n  background-color: #5F4CFF;\n}\n\n.menu-item.active {\n  background-color: #342E99;\n}\n\n.icon {\n  margin-right: 10px; /* Espacement entre l'icône et le texte */\n}\n\n.profile-section {\n  display: flex;\n  align-items: center;\n  padding: 10px 20px; /* Alignement du padding avec menu-item */\n  margin-top: 20px;\n  cursor: pointer;\n  border-radius: 8px;\n  transition: background 0.3s ease;\n  position: relative;\n  text-decoration: none;\n  font-weight: normal;\n  border-top: none;\n  box-shadow: none;\n}\n\n.profile-section:hover {\n  background-color: #5F4CFF;\n}\n\n.profile-pic {\n  width: 40px;\n  height: 40px;\n  border-radius: 50%;\n  margin-right: 15px;\n}\n\n.profile-details {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  margin-right: auto;\n}\n\n.profile-name {\n  font-size: 16px;\n  font-weight: bold;\n  color: #ffffff;\n}\n\n.settings-icon {\n  position: absolute;\n  right: 20px; /* Alignement avec le padding de gauche */\n  cursor: pointer;\n  text-decoration: none;\n  font-weight: normal;\n}",
+    "html": "<div class=\"sidebar\">\n  <div class=\"menu\">\n    <div class=\"menu-item active\">\n      <span class=\"icon\">🏠</span>\n      Dashboard\n    </div>\n    <div class=\"menu-item\">\n      <span class=\"icon\">👥</span>\n      Team\n    </div>\n    <div class=\"menu-item\">\n      <span class=\"icon\">📅</span>\n      Calendar\n    </div>\n    <div class=\"menu-item\">\n      <span class=\"icon\">📄</span>\n      Documents\n    </div>\n    <!-- Ajoutez d'autres éléments ici -->\n  </div>\n\n  <a href=\"#\" class=\"profile-section\">\n    <img src=\"profile-pic.jpg\" alt=\"Profile Picture\" class=\"profile-pic\">\n    <div class=\"profile-details\">\n      <div class=\"profile-name\">Dianne Robertson</div>\n    </div>\n    <span class=\"settings-icon\">⚙️</span>\n  </a>\n</div>\n",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport ReactDOM from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\n\nfunction App() {\n    return (\n        <div className=\"sidebar\">\n            <div className=\"menu\">\n                <div className=\"menu-item active\">\n                    <span className=\"icon\">🏠</span> Dashboard\n                </div>\n                <div className=\"menu-item\">\n                    <span className=\"icon\">👥</span> Team\n                </div>\n                <div className=\"menu-item\">\n                    <span className=\"icon\">📅</span> Calendar\n                </div>\n                <div className=\"menu-item\">\n                    <span className=\"icon\">📄</span> Documents\n                </div>\n                {/* Ajoutez d'autres éléments ici */}\n            </div>\n\n            <a href=\"#\" className=\"profile-section\">\n                <img src=\"profile-pic.jpg\" alt=\"Profile Picture\" className=\"profile-pic\">\n                <div className=\"profile-details\">\n                    <div className=\"profile-name\">Dianne Robertson</div>\n                </div>\n                <span className=\"settings-icon\">⚙️</span>\n            </a>\n        </div>\n    );\n}\n\nReactDOM.render(<App />, document.getElementById('root'));\n"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 0,
+  "topRowBeforeCollapse": 0,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".sidebar {\n  background-color: #4A3AFF;\n  width: calc(100% - 40px); /* Compense le padding */\n  padding: 20px; /* Padding uniforme autour de la sidebar */\n  color: #ffffff;\n  font-family: Arial, sans-serif;\n  height: calc(100vh - 40px);\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  overflow: hidden;\n}\n\n.menu {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n}\n\n.menu-item {\n  display: flex;\n  align-items: center;\n  padding: 10px 20px; /* Padding ajusté pour équilibrer */\n  font-size: 16px;\n  cursor: pointer;\n  border-radius: 8px;\n  transition: background 0.3s ease;\n  margin-bottom: 15px;\n}\n\n.menu-item:hover {\n  background-color: #5F4CFF;\n}\n\n.menu-item.active {\n  background-color: #342E99;\n}\n\n.icon {\n  margin-right: 10px; /* Espacement entre l'icône et le texte */\n}\n\n.profile-section {\n  display: flex;\n  align-items: center;\n  padding: 10px 20px; /* Alignement du padding avec menu-item */\n  margin-top: 20px;\n  cursor: pointer;\n  border-radius: 8px;\n  transition: background 0.3s ease;\n  position: relative;\n  text-decoration: none;\n  font-weight: normal;\n  border-top: none;\n  box-shadow: none;\n}\n\n.profile-section:hover {\n  background-color: #5F4CFF;\n}\n\n.profile-pic {\n  width: 40px;\n  height: 40px;\n  border-radius: 50%;\n  margin-right: 15px;\n}\n\n.profile-details {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  margin-right: auto;\n}\n\n.profile-name {\n  font-size: 16px;\n  font-weight: bold;\n  color: #ffffff;\n}\n\n.settings-icon {\n  position: absolute;\n  right: 20px; /* Alignement avec le padding de gauche */\n  cursor: pointer;\n  text-decoration: none;\n  font-weight: normal;\n}\n",
+    "html": "<div class=\"sidebar\">\n  <div class=\"menu\">\n    <div class=\"menu-item active\">\n      <span class=\"icon\">🏠</span>\n      Dashboard\n    </div>\n    <div class=\"menu-item\">\n      <span class=\"icon\">👥</span>\n      Team\n    </div>\n    <div class=\"menu-item\">\n      <span class=\"icon\">📅</span>\n      Calendar\n    </div>\n    <div class=\"menu-item\">\n      <span class=\"icon\">📄</span>\n      Documents\n    </div>\n    <!-- Ajoutez d'autres éléments ici -->\n  </div>\n\n  <a href=\"#\" class=\"profile-section\">\n    <img src=\"profile-pic.jpg\" alt=\"Profile Picture\" class=\"profile-pic\">\n    <div class=\"profile-details\">\n      <div class=\"profile-name\">Dianne Robertson</div>\n    </div>\n    <span class=\"settings-icon\">⚙️</span>\n  </a>\n</div>\n",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport ReactDOM from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\n\nfunction App() {\n    return (\n        <div className=\"sidebar\">\n            <div className=\"menu\">\n                <div className=\"menu-item active\">\n                    <span className=\"icon\">🏠</span> Dashboard\n                </div>\n                <div className=\"menu-item\">\n                    <span className=\"icon\">👥</span> Team\n                </div>\n                <div className=\"menu-item\">\n                    <span className=\"icon\">📅</span> Calendar\n                </div>\n                <div className=\"menu-item\">\n                    <span className=\"icon\">📄</span> Documents\n                </div>\n                {/* Ajoutez d'autres éléments ici */}\n            </div>\n\n            <a href=\"#\" className=\"profile-section\">\n                <img src=\"profile-pic.jpg\" alt=\"Profile Picture\" className=\"profile-pic\">\n                <div className=\"profile-details\">\n                    <div className=\"profile-name\">Dianne Robertson</div>\n                </div>\n                <span className=\"settings-icon\">⚙️</span>\n            </a>\n        </div>\n    );\n}\n\nReactDOM.render(<App />, document.getElementById('root'));\n"
+  },
+  "version": 1,
+  "widgetId": "7w8g8arb1z",
+  "widgetName": "Custom1"
+}

@@ -243,7 +243,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "95lb1qvhqk",
-  "leftColumn": 42,
+  "leftColumn": 52,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -264,7 +264,7 @@
     "buttonVariant": "SECONDARY"
   },
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 64,
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",
@@ -589,7 +589,7 @@
     "Layout"
   ],
   "title": "Edit Customer",
-  "topRow": 6,
+  "topRow": 5,
   "type": "JSON_FORM_WIDGET",
   "useSourceData": false,
   "version": 1,
