@@ -3,7 +3,7 @@ WITH inserted_account AS (
     VALUES ({{ inp_companyName.text }})
     RETURNING id AS account_id
 )
-INSERT INTO objects.accounts_users (account_id, user_id, status)
-SELECT account_id, {{ appsmith.store.user_id }}, 'Active'
+INSERT INTO objects.accounts_users (account_id, user_id, user_email, status)
+SELECT account_id, {{ appsmith.store.user_id }}, {{ appsmith.store.user_email }}, 'Active'
 FROM inserted_account
 RETURNING account_id;

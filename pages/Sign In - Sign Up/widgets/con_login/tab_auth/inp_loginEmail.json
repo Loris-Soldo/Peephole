@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 34,
+  "bottomRow": 31,
   "boxShadow": "none",
   "defaultText": "",
   "displayName": "Input",
@@ -52,7 +52,7 @@
     "number",
     "textarea"
   ],
-  "topRow": 27,
+  "topRow": 24,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "nckbq8kovr",

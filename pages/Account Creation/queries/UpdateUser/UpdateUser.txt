@@ -1,0 +1,7 @@
+{
+	"email": "{{appsmith.store.user_email}}",
+  "data": {
+     "account_id": "{{appsmith.store.account_id}}",
+     "account_name": "{{appsmith.store.account_name}}"
+   }
+}

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "WITH inserted_account AS (\n    INSERT INTO objects.accounts (company_name)\n    VALUES ({{ inp_companyName.text }})\n    RETURNING id AS account_id\n)\nINSERT INTO objects.accounts_users (account_id, user_id, status)\nSELECT account_id, {{ appsmith.store.user_id }}, 'Active'\nFROM inserted_account\nRETURNING account_id;",
+      "body": "WITH inserted_account AS (\n    INSERT INTO objects.accounts (company_name)\n    VALUES ({{ inp_companyName.text }})\n    RETURNING id AS account_id\n)\nINSERT INTO objects.accounts_users (account_id, user_id, user_email, status)\nSELECT account_id, {{ appsmith.store.user_id }}, {{ appsmith.store.user_email }}, 'Active'\nFROM inserted_account\nRETURNING account_id;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

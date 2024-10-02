@@ -1,0 +1,6 @@
+{
+    "from": "PeepHole <team@stackz.fr>",
+    "to": [{{inp_registerEmail.text}}],
+    "subject": "Your invite to Peephole !",
+    "html": "<h2>You have been invited</h2><p>You have been invited to join {{appsmith.store.account_name}} on Peephole.</p><p>Follow this <a href=\"https://app.appsmith.com/app/peephole/sign-in-sign-up-66daa85860286c6bec33b77b\">link</a> and fill the Sign Up form to create an account.</p>"
+  }

@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n  \"email\": \"{{inp_loginEmail.text}}\",\n  \"password\": \"{{inp_loginPassword.text}}\",\n\t\"options\": {\n      \"data\": {\n        \"first_name\": \"{{inp_registerFirstName.text}}\",\n        \"last_name\": \"{{inp_registerLastName.text}}\",\n\t\t\t\t\"phone_number\": \"{{inp_registerPhoneNumber.text}}\"\n      }\n    }\n}",
+      "body": "{\n  \"email\": \"{{inp_loginEmail.text}}\",\n  \"password\": \"{{inp_loginPassword.text}}\"\n}",
       "encodeParamsToggle": true,
       "formData": {
         "apiContentType": "application/json"
