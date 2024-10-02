@@ -22,7 +22,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "functions.ValidateToken",
     "name": "ValidateToken",
     "pageId": "Sign In - Sign Up",
