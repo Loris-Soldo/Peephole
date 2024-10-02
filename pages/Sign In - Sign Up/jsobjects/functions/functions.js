@@ -2,7 +2,7 @@ export default {
 		SignIn: () => {
 				return SignIn.run()
 						.then(data => {
-					
+
 								// Conserver les données d'authentification
 								storeValue('access_token', data['access_token']);
 								storeValue('token_type', data['token_type']);
@@ -18,7 +18,7 @@ export default {
 								storeValue('user_email', userMetadata['email']);
 								storeValue('phone_number', userMetadata['phone_number']);
 
-					
+
 								// Gérer les requêtes et les redirections
 								return Promise.all([
 										CountAccountsUsersEmail.run(),
@@ -44,44 +44,52 @@ export default {
 						});
 		},
 
-    ValidateToken: async () => {
-        if (!appsmith.URL.fullPath.includes('#access_token=')) return;
 
-        // Extraire de l'URL et stocker les données d'authentification
-        appsmith.URL.fullPath.split('#')[1].split('&').forEach(i => {
-            const [key, value] = i.split('=');
-            storeValue(key, value);
-        });
+ValidateToken: async () => {
+			// Vérifier si l'URL contient le token
+			if (!appsmith.URL.fullPath.includes('#access_token=')) return;
 
-        // Extraire les métadonnées utilisateur
-        const data = GetUser.run();
+			// Extraire de l'URL et stocker les données d'authentification
+			appsmith.URL.fullPath.split('#')[1].split('&').forEach(i => {
+					const [key, value] = i.split('=');
+					storeValue(key, value);
+			});
 
-				// Conserver les métadonnées utilisateur avec les clés spécifiées
-				const userMetadata = data.user_metadata;
-				storeValue('user_id', userMetadata['sub']);
-				storeValue('first_name', userMetadata['first_name']);
-				storeValue('last_name', userMetadata['last_name']);
-				storeValue('user_email', userMetadata['email']);
-				storeValue('phone_number', userMetadata['phone_number']);
-			
-				// Gérer les requêtes et les redirections
-				return Promise.all([
-					CountAccountsUsersEmail.run(),
-					CountAccountsUsersID.run()
-				]).then(([emailResult, idResult]) => {
+			// Extraire les métadonnées utilisateur
+			const data = await GetUser.run();
+			const userMetadata = data.user_metadata;
+
+			// Conserver les métadonnées utilisateur
+			await Promise.all([
+					storeValue('user_id', userMetadata['sub']),
+					storeValue('first_name', userMetadata['first_name']),
+					storeValue('last_name', userMetadata['last_name']),
+					storeValue('user_email', userMetadata['email']),
+					storeValue('phone_number', userMetadata['phone_number'])
+			]);
+
+			// Gérer les requêtes et les redirections
+			try {
+					const [emailResult, idResult] = await Promise.all([
+							CountAccountsUsersEmail.run(),
+							CountAccountsUsersID.run()
+					]);
+
 					const emailCount = emailResult[0].count;
 					const idCount = idResult[0].count;
+					console.log("emailCount :", emailCount);
+					console.log("idCount :", idCount);
 
 					if (emailCount > 0 && idCount > 0) {
-						setTimeout(() => navigateTo('Home'), 1000);
-					} else if (emailCount > 0 && idCount === 0) {
-						return UpdateAccountsUsers.run().then(() => {
 							setTimeout(() => navigateTo('Home'), 1000);
-						});
+					} else if (emailCount > 0 && idCount === 0) {
+							await UpdateAccountsUsers.run();
+							setTimeout(() => navigateTo('Home'), 1000);
 					} else {
-						setTimeout(() => navigateTo('Account Creation'), 1000);
+							setTimeout(() => navigateTo('Account Creation'), 1000);
 					}
-				});
-    }
+			} catch (error) {
+					console.error("Erreur lors de l'exécution des requêtes :", error);
+			}
+		}
 }
-
