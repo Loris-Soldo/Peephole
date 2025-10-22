@@ -1,11 +1,57 @@
-![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/appsmith_logo_primary.png)
+# Peephole
 
-This app is built using Appsmith. Turn any datasource into an internal app in minutes. Appsmith lets you drag-and-drop components to build dashboards, write logic with JavaScript objects and connect to any API, database or GraphQL source.
+Application Node.js avec Express
 
-![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/images/integrations.png)
+## Installation
 
-### [Github](https://github.com/appsmithorg/appsmith) • [Docs](https://docs.appsmith.com/?utm_source=github&utm_medium=social&utm_content=appsmith_docs&utm_campaign=null&utm_term=appsmith_docs) • [Community](https://community.appsmith.com/) • [Tutorials](https://github.com/appsmithorg/appsmith/tree/update/readme#tutorials) • [Youtube](https://www.youtube.com/appsmith) • [Discord](https://discord.gg/rBTTVJp)
+```bash
+npm install
+```
 
-##### You can visit the application using the below link
+## Configuration
 
-###### [![](https://assets.appsmith.com/git-sync/Buttons.svg) ](https://app.appsmith.com/applications/66227bb2f8a1c430d9870318/pages/66227e2504b7eb2dc2f12bf1) [![](https://assets.appsmith.com/git-sync/Buttons2.svg)](https://app.appsmith.com/applications/66227bb2f8a1c430d9870318/pages/66227e2504b7eb2dc2f12bf1/edit)
+Copier le fichier `.env.example` en `.env` et ajuster les variables d'environnement :
+
+```bash
+cp .env.example .env
+```
+
+## Démarrage
+
+### Mode développement
+```bash
+npm run dev
+```
+
+### Mode production
+```bash
+npm start
+```
+
+## Tests
+
+```bash
+npm test
+```
+
+## Structure du projet
+
+```
+peephole/
+├── src/
+│   ├── controllers/    # Contrôleurs
+│   ├── models/         # Modèles de données
+│   ├── routes/         # Routes de l'API
+│   ├── middleware/     # Middlewares personnalisés
+│   ├── config/         # Configuration
+│   ├── utils/          # Utilitaires
+│   ├── app.js          # Configuration de l'application Express
+│   └── index.js        # Point d'entrée
+├── tests/              # Tests
+└── package.json
+```
+
+## API Endpoints
+
+- `GET /` - Page d'accueil de l'API
+- `GET /health` - Vérification de l'état du serveur

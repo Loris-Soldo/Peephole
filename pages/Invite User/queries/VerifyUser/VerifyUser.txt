@@ -1,3 +1,0 @@
-SELECT COUNT(*)
-FROM objects.accounts_users
-WHERE user_email = {{inp_registerEmail.text}}

@@ -1,9 +1,0 @@
-{
-  "email": "{{inp_registerEmail.text}}",
-  "password": "{{inp_registerPassword.text}}",
-  "data": {
-     "first_name": "{{inp_registerFirstName.text}}",
-     "last_name": "{{inp_registerLastName.text}}",
-	   "phone_number": "{{inp_registerPhoneNumber.text}}"
-   }
-}

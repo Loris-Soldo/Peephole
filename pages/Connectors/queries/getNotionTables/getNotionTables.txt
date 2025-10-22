@@ -1,6 +1,0 @@
-SELECT
-	notion_table_name AS label,
-	notion_table_id AS value
-FROM
-	public.notion_tables
-GROUP BY 1,2

@@ -1,2 +1,0 @@
-INSERT INTO objects.accounts_users (account_id, user_email, status)
-SELECT {{ appsmith.store.account_id }}, {{ inp_registerEmail.text }}, 'Invite'
